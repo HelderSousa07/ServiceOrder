@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NovoPcActivity">
+
+    <ImageView
+        android:id="@+id/img_add_photo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_add_photo_round"
+        />
+
+
+
+    <android.support.design.widget.TextInputEditText
+        android:drawableStart="@drawable/ic_pc_black"
+        android:id="@+id/edt_id_pc"
+        android:background="@drawable/borda_redonda_branca"
+        android:hint="TOMBO"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/img_add_photo"
+        android:layout_marginTop="92dp"
+        android:layout_marginStart="35dp"
+        />
+
+
+
+
+
+    <android.support.design.widget.TextInputEditText
+        android:drawableStart="@drawable/ic_computer_black_24dp"
+        android:id="@+id/edt_marca_pc"
+        android:textAlignment="center"
+        android:hint="Marca"
+        android:background="@drawable/borda_redonda_branca"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/edt_id_pc"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="35dp"
+        />
+
+    <android.support.design.widget.TextInputEditText
+        android:drawableStart="@drawable/ic_location_on_black_24dp"
+        android:textAlignment="center"
+        android:id="@+id/edt_setor_pc"
+        android:hint="Setor"
+        android:background="@drawable/borda_redonda_branca"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/edt_marca_pc"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="35dp"
+        />
+
+
+
+
+    <android.support.design.widget.TextInputEditText
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:textAlignment="center"
+        android:id="@+id/edt_user_pc"
+        android:hint="Usuário"
+        android:background="@drawable/borda_redonda_branca"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/edt_setor_pc"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="35dp"
+        />
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:textColor="@color/textColorPrimary"
+        android:background="@drawable/borda_redonda"
+        android:layout_alignTop="@+id/edt_user_pc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+</RelativeLayout>
